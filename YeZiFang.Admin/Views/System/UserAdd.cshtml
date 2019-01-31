@@ -1,0 +1,13 @@
+﻿@model UserInfo
+
+<body>
+    <form id="UserAdd" class="layui-form layui-form-pane"
+          asp-controller="System" asp-action="UserAdd"
+          data-ajax="true"
+          data-ajax-mode="replace"
+          data-ajax-update="#"
+          data-ajax-method="Post"
+          data-ajax-success="Callback">
+        @await Html.PartialAsync("UserForm")
+    </form>
+</body>

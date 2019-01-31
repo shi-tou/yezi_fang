@@ -1,0 +1,46 @@
+﻿@model Dictionary<string, List<SelectCityResponse>>
+
+
+<div class="layui-card">
+    @*<div class="layui-card-header">折叠面板</div>*@
+    <div class="layui-card-body">
+        @foreach (var item in Model)
+        {
+            <div class="layui-collapse" lay-filter="component-panel">
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">@item.Key</h2>
+                    <div id="city" class="layui-colla-content">
+                        @foreach (var c in item.Value)
+                        {
+                            <a id="@c.ID" href="javascript:void(0);">@c.CityName</a>
+                        }&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>
+    layui.use(['element'], function () {
+        $("#city a").on("click", function () {
+            var cityId = $(this).attr("id");
+            var cityName = $(this).text();
+            $.ajax({
+                type: "POST",
+                datatype: "Json",
+                url: "/Common/CityReplace",
+                data: { cityId: cityId, cityName: cityName },
+                cache: false,
+                success: function (jsondata) {
+                    if (jsondata.flag) {
+                        var url = parent.location.toString();
+                        if (url.indexOf('?') > 0)
+                            url = url.split('?')[0];
+                        parent.location.replace(url);
+                    }
+                }
+
+            });
+        });
+    });
+</script>

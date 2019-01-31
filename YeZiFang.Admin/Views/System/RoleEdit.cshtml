@@ -1,0 +1,14 @@
+﻿
+@model RoleInfo
+<body>
+    
+    <form id="RoleEdit" class="layui-form layui-form-pane"
+          asp-controller="System" asp-action="RoleEdit"
+          data-ajax="true"
+          data-ajax-mode="replace"
+          data-ajax-update="#"
+          data-ajax-method="Post"
+          data-ajax-success="Callback">
+        @await Html.PartialAsync("RoleForm")
+    </form>
+</body>

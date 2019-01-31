@@ -1,0 +1,65 @@
+﻿@model Pager<GetProjectListResponse>
+@{
+    ViewBag.Title = "楼盘列表";
+}
+
+<div class="container">
+    @using (Html.BeginForm("ProjectList", "Project", FormMethod.Get, new { @class = "layui-form search-form layui-elem-quote", @id = "searchForm" }))
+    {
+        <table>
+            <tr>
+                <th>名称：</th>
+                <td>
+                    <input id="ProjectName" name="ProjectName" class="layui-input" type="text" value="">
+                </td>
+                <td>
+                    <input type="submit" class="layui-btn layui-btn-sm" value="查 询" />
+                </td>
+            </tr>
+        </table>
+    }
+        <div style="padding:0px 10px;">
+            <a class="layui-btn layui-btn-sm layui-btn-normal" href="javascript:void(0);" onclick="AddOrEdit()">
+                <i class="layui-icon layui-icon-tianjia2"></i>添加楼盘</a>
+        </div>
+    <table class="layui-table" id="list">
+        <thead>
+            <tr>
+                <th style="width:45px; text-align:center;">#</th>
+                <th>楼盘名称</th>
+                <th>楼盘均价(元/㎡)</th>
+                <th>楼盘地址</th>
+                <th>开发商</th>
+                <th style="width:120px;">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{ int index = 1;}
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td style="width:45px; text-align:center;">@(index++)</td>
+                <td>@item.ProjectName</td>
+                <td>@(item.AvgPrice <= 0 ? "待定" : item.AvgPrice.ToString("0"))</td>
+                <td>@item.Address</td>
+                <td>@item.ProjectDeveloper</td>
+                <td>
+                    <a class="layui-btn layui-btn-normal layui-btn-xs" href="javascript:void(0)" onclick="AddOrEdit('@item.ID')"><i class="layui-icon layui-icon-bianji"></i>编辑</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="javascript:Delete('/System/ProjectDelete/@item.ID');"><i class="layui-icon layui-icon-delete"></i>删除</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    @await Html.PartialAsync("_Pager", Model)
+</div>
+<script>
+    function AddOrEdit(id) {
+        if (id == undefined) {
+            ShowMaxWindow('===添加楼盘信息===', '/Project/ProjectAdd');
+        }
+        else {
+            ShowMaxWindow('===编辑楼盘信息===', '/Project/ProjectEdit/' + id);
+        }
+    }
+</script>

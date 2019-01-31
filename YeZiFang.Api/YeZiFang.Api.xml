@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YeZiFang.Api</name>
+    </assembly>
+    <members>
+        <member name="T:YeZiFang.Api.Controllers.HealthController">
+            <summary>
+            Consul健康状态管理
+            </summary>
+        </member>
+        <member name="M:YeZiFang.Api.Controllers.HealthController.Get">
+            <summary>
+            Consul会通过call这个API来确认Service的健康状态。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YeZiFang.Api.Startup.LocalIPAddress">
+            <summary>
+            本地ip
+            </summary>
+        </member>
+    </members>
+</doc>

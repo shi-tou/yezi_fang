@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model PagingList<ProjectModel>
+
+<ul class="bui-list bui-list-thumbnail">
+    @foreach (ProjectModel item in Model.ReturnData)
+    {
+    <li class="bui-btn bui-box">
+        
+        <div class="bui-thumbnail bui-sub warning" data-sub="新品"><img src="~/images/image.png" /></div>
+        <div class="span1">
+            <h3 class="item-title">@item.project_name <span class="primary-reverse">[@item.purpose]</span></h3>
+            <p class="item-text">特色：@item.feature</p>
+            <p class="item-text">装修：@item.fitment</p>
+            <p class="item-text">地区：@item.area</p>
+            <p class="item-text">地址：@item.address</p>
+        </div>
+        <span class="price" style="color:red;font-weight:bold;"><i>￥</i>@(item.avg_price > 0 ? item.avg_price.ToString() : "待定")</span>
+    </li>
+    }
+
+</ul>

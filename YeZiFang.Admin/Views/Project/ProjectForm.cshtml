@@ -1,0 +1,84 @@
+﻿@model ProjectInfo
+<table class="post-form">
+    <tr>
+        <th style="width: 150px;">楼盘名称：</th>
+        <td>
+            <input id="ProjectName" name="ProjectName" lay-verify="required" lay-msg="楼盘名称不能为空" class="layui-input" type="text" value="@Model.ProjectName">
+        </td>
+        <th>楼盘别名：</th>
+        <td>
+            <input id="ProjectOtherName" name="ProjectOtherName" class="layui-input" type="text" value="@Model.ProjectOtherName">
+        </td>
+    </tr>
+    <tr>
+        <th>开发商：</th>
+        <td>
+            <input id="ProjectDeveloper" name="ProjectDeveloper" class="layui-input" type="text" value="@Model.ProjectDeveloper">
+        </td>
+        <th>行政区：</th>
+        <td>
+            @Html.DropDownList("AreaId", ViewData["Areas"] as SelectList, "-请选择-", new { @class = "layui-input" })
+        </td>
+    </tr>
+    <tr>
+        <th>地址：</th>
+        <td colspan="3">
+            <input id="Address" name="Address" class="layui-input" type="text" value="@Model.Address">
+        </td>
+    </tr>
+    <tr>
+        <th>经度：</th>
+        <td>
+            <input id="Longitude" name="Longitude" class="layui-input" lay-verify="number" lay-msg="现价输入有误" type="text" value="@Model.Longitude">
+        </td>
+        <th>纬度：</th>
+        <td>
+            <input id="Latitude" name="Latitude" class="layui-input" lay-verify="number" type="text" value="@Model.Latitude">
+        </td>
+    </tr>
+    <tr>
+        <th>使用年限：</th>
+        <td>
+            <input id="UsefulLife" name="UsefulLife" class="layui-input" lay-verify="number" lay-msg="现价输入有误" type="text" value="@Model.UsefulLife">
+        </td>
+        <th>房屋用途：</th>
+        <td>
+            <input id="HousePurpose" name="HousePurpose" class="layui-input" type="text" value="@Model.HousePurpose">
+        </td>
+    </tr>
+    <tr>
+        <th>楼盘均价：</th>
+        <td>
+            <input id="AvgPrice" name="AvgPrice" class="layui-input" lay-verify="number" type="text" value="@Model.AvgPrice">
+        </td>
+        <th></th>
+        <td>
+        </td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <button id="post_btn" type="submit" class="layui-btn" lay-submit="" lay-filter="post">保 存</button>
+            <a href="javascript:void(0)" onclick="parent.CloseWindow();" class="layui-btn layui-btn-normal">返回列表</a>
+        </td>
+    </tr>
+</table>
+<script>
+    layui.use(['form', 'layer'], function () {
+        var form = layui.form,
+        layer = layui.layer;
+        //自定义验证规则
+        form.verify({
+            confirmPassword: function (value) {
+                if (value != $('#Password').val()) {
+                    return '两次输入密码不一致！';
+                }
+            }
+        });
+        //监听提交
+        form.on('submit(post)', function (data) {
+            console.log(JSON.stringify(data.field));
+            return true;
+        });
+    });
+</script>

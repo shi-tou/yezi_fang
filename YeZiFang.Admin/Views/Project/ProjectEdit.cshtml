@@ -1,0 +1,13 @@
+﻿@model ProjectInfo
+
+<body>
+    <form id="ProjectEdit" class="layui-form layui-form-pane"
+          asp-controller="Project" asp-action="ProjectEdit"
+          data-ajax="true"
+          data-ajax-mode="replace"
+          data-ajax-update="#"
+          data-ajax-method="Post"
+          data-ajax-success="Callback">
+        @await Html.PartialAsync("ProjectForm")
+    </form>
+</body>

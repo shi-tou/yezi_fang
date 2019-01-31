@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YeZiFang.SyncData</name>
+    </assembly>
+    <members>
+        <member name="T:YeZiFang.SyncData.Controllers.ProjectController">
+            <summary>
+            楼盘同步
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Controllers.ProjectController.#ctor(YeZiFang.SyncData.Service.IMongoService,Shitou.Framework.ORM.IAdoTemplate)">
+            <summary>
+            构造注入
+            </summary>
+            <param name="mongoService"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Controllers.ProjectController.Sync(System.Int32)">
+            <summary>
+            楼盘同步
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YeZiFang.SyncData.Model.CollectionAttribute">
+            <summary>
+            实体与数据表的映射
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Model.CollectionAttribute.#ctor(System.String)">
+            <summary>
+            注入属性值
+            </summary>
+            <param name="collectionName">映射到的Collection</param>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.CollectionAttribute.CollectionName">
+            <summary>
+            CollectionName
+            </summary>
+        </member>
+        <member name="T:YeZiFang.SyncData.Model.Project">
+            <summary>
+            楼盘
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProjectId">
+            <summary>
+            楼盘id
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProjectName">
+            <summary>
+            楼盘名称
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProjectAvgPrice">
+            <summary>
+            均价
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProjectDeveloper">
+            <summary>
+            开发商
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProjectAddress">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.ProvinceId">
+            <summary>
+            省份
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.CityId">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.CityName">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.AreaId">
+            <summary>
+            行政区
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Model.Project.AreaName">
+            <summary>
+            行政区
+            </summary>
+        </member>
+        <member name="T:YeZiFang.SyncData.Service.IMongoService">
+            <summary>
+            IMongoService
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.Insert``1(``0)">
+            <summary>
+            插入单条数据
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.InsertAsync``1(``0)">
+            <summary>
+            插入单条数据(异步)
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.Insert``1(System.Collections.Generic.List{``0})">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.InsertAsync``1(System.Collections.Generic.List{``0})">
+            <summary>
+            插入多条数据(异步)
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.Delete``1">
+            <summary>
+            删除所有数据
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.DeleteAsync``1">
+            <summary>
+            删除所有数据(异步)
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.Delete``1(System.String,System.Object)">
+            <summary>
+            删除指定条件的数据
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.List``1">
+            <summary>
+            查询所有数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.List``1(System.Collections.Hashtable)">
+            <summary>
+            查询数据（默认-条件与）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.IMongoService.ListOr``1(System.Collections.Hashtable)">
+            <summary>
+            查询数据（条件或）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YeZiFang.SyncData.Service.MongoConfig">
+            <summary>
+            Mongodb连接配置信息（）
+            </summary>
+        </member>
+        <member name="F:YeZiFang.SyncData.Service.MongoConfig.originalConnectionString">
+            <summary>
+            原始连接字符串
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Service.MongoConfig.Host">
+            <summary>
+            主机地址
+            </summary>
+        </member>
+        <member name="P:YeZiFang.SyncData.Service.MongoConfig.DatabaseName">
+            <summary>
+            数据库名
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoConfig.#ctor(System.String)">
+            <summary>
+            补始化实例
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoConfig.Parse">
+            <summary>
+            解析连接字符串
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoConfig.ToString">
+            <summary>
+            重载ToString方法，返回连接字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoDbServiceCollectionExtensions.AddMongodb(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            注册mongodb服务
+            </summary>
+            <param name="services"></param>
+            <param name="connectionString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoDbServiceCollectionExtensions.AddMongodb(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Type)">
+            <summary>
+            注册mongodb服务
+            </summary>
+            <param name="services"></param>
+            <param name="connectionString"></param>
+            <param name="typeService"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YeZiFang.SyncData.Service.MongoService">
+            <summary>
+            Mongodb服务类
+            </summary>
+        </member>
+        <member name="F:YeZiFang.SyncData.Service.MongoService.MongoDatabase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.#ctor(YeZiFang.SyncData.Service.MongoConfig)">
+            <summary>
+            初始化实例
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.Insert``1(``0)">
+            <summary>
+            插入单条数据
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.InsertAsync``1(``0)">
+            <summary>
+            插入单条数据(异步)
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.Insert``1(System.Collections.Generic.List{``0})">
+            <summary>
+            插入多条数据
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.InsertAsync``1(System.Collections.Generic.List{``0})">
+            <summary>
+            插入多条数据(异步)
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.Delete``1">
+            <summary>
+            删除所有数据
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.DeleteAsync``1">
+            <summary>
+            删除所有数据(异步)
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.Delete``1(System.String,System.Object)">
+            <summary>
+            删除指定条件的数据
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.List``1">
+            <summary>
+            查询所有数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.List``1(System.Collections.Hashtable)">
+            <summary>
+            查询数据（默认-条件与）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YeZiFang.SyncData.Service.MongoService.ListOr``1(System.Collections.Hashtable)">
+            <summary>
+            查询数据（条件或）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:YeZiFang.SyncData.Service.MongoService.CustomAttributes">
+            <summary>
+            Model对象自定义Attributes集合
+            </summary>
+        </member>
+        <member name="M:YeZiFang.SyncData.Startup.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

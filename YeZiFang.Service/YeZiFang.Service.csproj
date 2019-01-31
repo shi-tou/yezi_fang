@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+    <PackageReference Include="Shitou.Framework.ORM" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YeZiFang.Common\YeZiFang.Common.csproj" />
+    <ProjectReference Include="..\YeZiFang.Dao\YeZiFang.Dao.csproj" />
+    <ProjectReference Include="..\YeZiFang.DataContract\YeZiFang.DataContract.csproj" />
+    <ProjectReference Include="..\YeZiFang.Model\YeZiFang.Model.csproj" />
+  </ItemGroup>
+
+</Project>
