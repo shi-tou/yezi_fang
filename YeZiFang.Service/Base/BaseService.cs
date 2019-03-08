@@ -71,7 +71,6 @@ namespace YeZiFang.Service
         /// <returns></returns>
         public bool Update<T>(T t)
         {
-            
             try
             {
                 return adoTemplate.Update<T>(t) > 0;

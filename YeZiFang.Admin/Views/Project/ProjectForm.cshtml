@@ -8,16 +8,42 @@
         <th>楼盘别名：</th>
         <td>
             <input id="ProjectOtherName" name="ProjectOtherName" class="layui-input" type="text" value="@Model.ProjectOtherName">
+            @Html.HiddenFor(model => model.CreateBy)
+            @Html.HiddenFor(model => model.CreateTime)
+            @Html.HiddenFor(model => model.UpdateBy)
+            @Html.HiddenFor(model => model.UpdateTime)
+        </td>
+    </tr>
+    <tr>
+        <th>用途：</th>
+        <td>
+            @Html.DropDownList("Purpose", ViewData["PurposeData"] as SelectList, "-请选择-", new { @class = "layui-input" })
+        </td>
+        <th>装修：</th>
+        <td>
+            @Html.DropDownList("Fitment", ViewData["FitmentData"] as SelectList, "-请选择-", new { @class = "layui-input" })
         </td>
     </tr>
     <tr>
         <th>开发商：</th>
         <td>
-            <input id="ProjectDeveloper" name="ProjectDeveloper" class="layui-input" type="text" value="@Model.ProjectDeveloper">
+            <input id="ProjectDeveloper" name="ProjectDeveloper" class="layui-input" type="text" value="@Model.Developer">
         </td>
+        <th>楼盘均价：</th>
+        <td>
+            <input id="AvgPrice" name="AvgPrice" class="layui-input" lay-verify="number" type="text" value="@Model.AvgPrice">
+        </td>
+    </tr>
+    <tr>
         <th>行政区：</th>
         <td>
-            @Html.DropDownList("AreaId", ViewData["Areas"] as SelectList, "-请选择-", new { @class = "layui-input" })
+            @Html.DropDownList("ProvinceId", ViewData["ProvinceData"] as SelectList, "-请选择-", new { @class = "layui-input" })
+            @Html.DropDownList("CityId", ViewData["CityData"] as SelectList, "-请选择-", new { @class = "layui-input" })
+            @Html.DropDownList("AreaId", ViewData["AreaData"] as SelectList, "-请选择-", new { @class = "layui-input" })
+        </td>
+        <th>特色：</th>
+        <td>
+            <input id="Feature" name="Feature" class="layui-input" type="text" value="@Model.Feature">
         </td>
     </tr>
     <tr>
@@ -29,30 +55,31 @@
     <tr>
         <th>经度：</th>
         <td>
-            <input id="Longitude" name="Longitude" class="layui-input" lay-verify="number" lay-msg="现价输入有误" type="text" value="@Model.Longitude">
+            <input id="Longitude" name="Longitude" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.Longitude">
         </td>
         <th>纬度：</th>
         <td>
-            <input id="Latitude" name="Latitude" class="layui-input" lay-verify="number" type="text" value="@Model.Latitude">
+            <input id="Latitude" name="Latitude" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.Latitude">
         </td>
     </tr>
     <tr>
         <th>使用年限：</th>
         <td>
-            <input id="UsefulLife" name="UsefulLife" class="layui-input" lay-verify="number" lay-msg="现价输入有误" type="text" value="@Model.UsefulLife">
+            <input id="UsefulLife" name="UsefulLife" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.UsefulLife">
         </td>
-        <th>房屋用途：</th>
+        <th>总套数：</th>
         <td>
-            <input id="HousePurpose" name="HousePurpose" class="layui-input" type="text" value="@Model.HousePurpose">
+            <input id="TotalHouseCount" name="TotalHouseCount" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.TotalHouseCount">
         </td>
     </tr>
     <tr>
-        <th>楼盘均价：</th>
+        <th>占地面积：</th>
         <td>
-            <input id="AvgPrice" name="AvgPrice" class="layui-input" lay-verify="number" type="text" value="@Model.AvgPrice">
+            <input id="LandArea" name="LandArea" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.LandArea">
         </td>
-        <th></th>
+        <th>建筑面积：</th>
         <td>
+            <input id="BuildingArea" name="BuildingArea" class="layui-input" lay-verify="number" lay-msg="输入有误" type="text" value="@Model.BuildingArea">
         </td>
     </tr>
     <tr>

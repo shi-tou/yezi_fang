@@ -13,7 +13,8 @@ using YeZiFang.Model;
 using YeZiFang.Application.Models;
 using Microsoft.AspNetCore.Authorization;
 using YeZiFang.Common;
-
+using YeZiFang.Model.Common;
+using YeZiFang.DataContract.Base;
 
 namespace YeZiFang.Admin.Controllers
 {
@@ -37,7 +38,7 @@ namespace YeZiFang.Admin.Controllers
         /// <returns></returns>
         public ActionResult ProjectList(GetProjectListRequest request)
         {
-            request.CityId = CityId;
+            //request.CityId = CityId;
             Pager<GetProjectListResponse> list = ProjectService.GetProjectList(request);
             return View(list);
         }
@@ -47,7 +48,7 @@ namespace YeZiFang.Admin.Controllers
         /// <returns></returns>
         public ActionResult ProjectAdd()
         {
-            ViewData["Areas"] = new SelectList(ProjectService.GetList<AreaInfo>("CityId", CityId), "ID", "AreaName");
+            ViewData["AreaData"] = new SelectList(ProjectService.GetList<AreaInfo>("CityId", CityId), "ID", "AreaName");
             return View(new ProjectInfo());
         }
         /// <summary>
@@ -56,7 +57,7 @@ namespace YeZiFang.Admin.Controllers
         /// <param name="info"></param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult ProjectAdd(ProjectInfo info, IFormCollection form)
+        public ActionResult ProjectAdd(ProjectInfo info)
         {
             CityInfo cityInfo = ProjectService.GetModel<CityInfo>("ID", CityId);
             info.ID = StringUtils.GenerateUniqueID();
@@ -81,8 +82,14 @@ namespace YeZiFang.Admin.Controllers
         /// <returns></returns>
         public ActionResult ProjectEdit(string id)
         {
-            ViewData["Areas"] = new SelectList(ProjectService.GetList<AreaInfo>("CityId", CityId), "ID", "AreaName");
             ProjectInfo info = ProjectService.GetModel<ProjectInfo>("ID", id);
+            List<DicDataInfo> dicData = ProjectService.GetList<DicDataInfo>();
+            ViewData["PurposeData"] = new SelectList(dicData.Where(a => a.ParentId == Consts.Purpose).ToList(), "Value", "Name");
+            ViewData["FitmentData"] = new SelectList(dicData.Where(a => a.ParentId == Consts.Fitment).ToList(), "Value", "Name");
+            ViewData["ProvinceData"] = new SelectList(ProjectService.GetList<ProvinceInfo>(), "ID", "ProvinceName");
+            ViewData["CityData"] = new SelectList(ProjectService.GetList<CityInfo>("ProvinceId", info.ProvinceId), "ID", "CityName");
+            ViewData["AreaData"] = new SelectList(ProjectService.GetList<AreaInfo>("CityId", info.CityId), "ID", "AreaName");
+            
             return View(info);
         }
         /// <summary>
@@ -91,7 +98,7 @@ namespace YeZiFang.Admin.Controllers
         /// <param name="info"></param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult ProjectEdit(ProjectInfo info, IFormCollection form)
+        public ActionResult ProjectEdit(ProjectInfo info)
         {
             if (ProjectService.Update(info))
             {

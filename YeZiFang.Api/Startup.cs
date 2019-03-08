@@ -51,7 +51,7 @@ namespace YeZiFang.Api
                 //全局异常处理
                 options.Filters.Add(typeof(GlobalExceptionFilterAttribute));
                 //权限验证过滤
-                //options.Filters.Add(typeof(AuthFilterAttribute));
+                options.Filters.Add(typeof(AuthFilterAttribute));
             })
             // add Json Format
             .AddJsonOptions(options =>

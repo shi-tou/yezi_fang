@@ -42,7 +42,7 @@
                 <td>@item.ProjectName</td>
                 <td>@(item.AvgPrice <= 0 ? "待定" : item.AvgPrice.ToString("0"))</td>
                 <td>@item.Address</td>
-                <td>@item.ProjectDeveloper</td>
+                <td>@item.Developer</td>
                 <td>
                     <a class="layui-btn layui-btn-normal layui-btn-xs" href="javascript:void(0)" onclick="AddOrEdit('@item.ID')"><i class="layui-icon layui-icon-bianji"></i>编辑</a>
                     <a class="layui-btn layui-btn-danger layui-btn-xs" onclick="javascript:Delete('/System/ProjectDelete/@item.ID');"><i class="layui-icon layui-icon-delete"></i>删除</a>

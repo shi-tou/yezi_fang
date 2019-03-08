@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\YeZiFang.Common\YeZiFang.Common.csproj" />
+    <ProjectReference Include="..\YeZiFang.DataContract\YeZiFang.DataContract.csproj" />
     <ProjectReference Include="..\YeZiFang.Model\YeZiFang.Model.csproj" />
   </ItemGroup>
 

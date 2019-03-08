@@ -23,9 +23,25 @@ namespace YeZiFang.Model
         /// </summary>
         public string ProjectOtherName { get; set; }
         /// <summary>
+        /// 特色
+        /// </summary>
+        public string Feature { get; set; }
+        /// <summary>
+        /// 用途
+        /// </summary>
+        public int Purpose { get; set; }
+        /// <summary>
+        /// 均价
+        /// </summary>
+        public decimal AvgPrice { get; set; }
+        /// <summary>
+        /// 装修
+        /// </summary>
+        public int Fitment { get; set; }
+        /// <summary>
         /// 开发商
         /// </summary>
-        public string ProjectDeveloper { get; set; }
+        public string Developer { get; set; }
         /// <summary>
         /// 省
         /// </summary>
@@ -42,18 +58,6 @@ namespace YeZiFang.Model
         /// </summary>
         public string Address { get; set; }
         /// <summary>
-        /// 使用年限
-        /// </summary>
-        public int UsefulLife { get; set; }
-        /// <summary>
-        /// 房屋目的
-        /// </summary>
-        public string HousePurpose { get; set; }
-        /// <summary>
-        /// 均价
-        /// </summary>
-        public decimal AvgPrice { get; set; }
-        /// <summary>
         /// 经度
         /// </summary>
         public decimal Longitude { get; set; }
@@ -61,6 +65,30 @@ namespace YeZiFang.Model
         /// 纬度
         /// </summary>
         public decimal Latitude { get; set; }
+        /// <summary>
+        /// 使用年限
+        /// </summary>
+        public int UsefulLife { get; set; }
+        /// <summary>
+        /// 总套数
+        /// </summary>
+        public int TotalHouseCount { get; set; }
+        /// <summary>
+        /// 占地面积
+        /// </summary>
+        public decimal LandArea { get; set; }
+        /// <summary>
+        /// 建筑面积
+        /// </summary>
+        public decimal BuildingArea { get; set; }
+        /// <summary>
+        /// 绿化率
+        /// </summary>
+        public decimal GreenRate { get; set; }
+        /// <summary>
+        /// 容积率
+        /// </summary>
+        public decimal PlotRate { get; set; }
         /// <summary>
         /// 创建人
         /// </summary>

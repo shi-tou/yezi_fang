@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
@@ -24,11 +25,12 @@ namespace YeZiFang.Application.Filter
         /// <param name="context"></param>
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            string controller = context.RouteData.Values["controller"].ToString();
-            string action = context.RouteData.Values["action"].ToString();
-            string requestPath = string.Format("{0}/{1}", controller, action);
+            //string controller = context.RouteData.Values["controller"].ToString();
+            //string action = context.RouteData.Values["action"].ToString();
+            //string requestPath = string.Format("{0}/{1}", controller, action);
+            string url = context.HttpContext.Request.Path.ToString();
             var actionArguments = JsonConvert.SerializeObject(context.ActionArguments);
-            logger.LogInformation("Request Start->RequestPath:{0},ActionArguments:{1}", requestPath, actionArguments);
+            logger.LogInformation("Request->url:{0},ActionArguments:{1}", url, actionArguments);
             base.OnActionExecuting(context);
         }
         /// <summary>
@@ -37,11 +39,13 @@ namespace YeZiFang.Application.Filter
         /// <param name="context"></param>
         public override void OnActionExecuted(ActionExecutedContext context)
         {
-            string controller = context.RouteData.Values["controller"].ToString();
-            string action = context.RouteData.Values["action"].ToString();
-            string requestPath = string.Format("{0}/{1}", controller, action);
-            string response = JsonConvert.SerializeObject(context.Result);
-            logger.LogInformation("Request End->RequestPath:{0},Response:{1}", requestPath, response);
+            //string controller = context.RouteData.Values["controller"].ToString();
+            //string action = context.RouteData.Values["action"].ToString();
+            //string requestPath = string.Format("{0}/{1}", controller, action);
+            string url = context.HttpContext.Request.Path.ToString();
+            var result = (ObjectResult)context.Result;
+            string response = JsonConvert.SerializeObject(result.Value);
+            logger.LogInformation("Response->url:{0},Response:{1}", url, response);
             base.OnActionExecuted(context);
         }
     }

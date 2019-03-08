@@ -9,6 +9,6 @@ namespace YeZiFang.DataContract.Request
         /// <summary>
         /// 城市
         /// </summary>
-        public int CityId = 6;
+        public int CityId = 0;
     }
 }

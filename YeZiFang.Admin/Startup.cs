@@ -45,7 +45,7 @@ namespace YeZiFang.Admin
             services.AddMvc(options =>
             {
                 //全局请求处理
-                options.Filters.Add(typeof(GlobalActionFilterAttribute));
+                //options.Filters.Add(typeof(GlobalActionFilterAttribute));
                 //全局异常处理
                 options.Filters.Add(typeof(GlobalExceptionFilterAttribute));
                 //权限验证过滤

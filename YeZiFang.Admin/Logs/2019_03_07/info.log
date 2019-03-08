@@ -1,0 +1,187 @@
+﻿2019-03-07 11:40:05,020 [1] INFO  Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-03-07 11:40:08,716 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-03-07 11:40:08,815 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:08,837 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home"}. Executing action YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)
+2019-03-07 11:40:08,848 [12] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization failed.
+2019-03-07 11:40:08,853 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-03-07 11:40:08,858 [12] INFO  Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+2019-03-07 11:40:08,877 [12] INFO  Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies was challenged.
+2019-03-07 11:40:08,882 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin) in 39.4377ms
+2019-03-07 11:40:08,886 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:08,905 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 189.7757ms 302 
+2019-03-07 11:40:08,907 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Login?ReturnUrl=%2F  
+2019-03-07 11:40:08,914 [11] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:08,940 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Login"}. Executing action YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)
+2019-03-07 11:40:08,963 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin) with arguments () - Validation state: Valid
+2019-03-07 11:40:08,971 [11] INFO  Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed out.
+2019-03-07 11:40:08,976 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.3443ms.
+2019-03-07 11:40:09,025 [11] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+2019-03-07 11:40:09,300 [11] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 315.1572ms.
+2019-03-07 11:40:09,307 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin) in 360.4598ms
+2019-03-07 11:40:09,309 [11] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:09,314 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 407.5465ms 200 text/html; charset=utf-8
+2019-03-07 11:40:09,343 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/css/main.css  
+2019-03-07 11:40:09,355 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/css/layui.css  
+2019-03-07 11:40:09,416 [11] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/css/layui.css'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\css\layui.css'
+2019-03-07 11:40:09,430 [12] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/main.css'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\css\main.css'
+2019-03-07 11:40:09,437 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.5099ms 200 text/css
+2019-03-07 11:40:09,439 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 94.6255ms 200 text/css
+2019-03-07 11:40:09,451 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/js/login.js  
+2019-03-07 11:40:09,455 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/jquery.unobtrusive-ajax.min.js  
+2019-03-07 11:40:09,455 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/jquery-1.10.2.min.js  
+2019-03-07 11:40:09,458 [12] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/login.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\js\login.js'
+2019-03-07 11:40:09,464 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.5739ms 200 application/javascript
+2019-03-07 11:40:09,467 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/js/common.js  
+2019-03-07 11:40:09,472 [6] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/jquery.unobtrusive-ajax.min.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\jquery\jquery.unobtrusive-ajax.min.js'
+2019-03-07 11:40:09,486 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.4958ms 200 application/javascript
+2019-03-07 11:40:09,490 [11] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/common.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\js\common.js'
+2019-03-07 11:40:09,491 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/layui.js  
+2019-03-07 11:40:09,494 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.2702ms 200 application/javascript
+2019-03-07 11:40:09,506 [11] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/layui.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\layui.js'
+2019-03-07 11:40:09,512 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.5839ms 200 application/javascript
+2019-03-07 11:40:09,515 [7] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery/jquery-1.10.2.min.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\jquery\jquery-1.10.2.min.js'
+2019-03-07 11:40:09,524 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.8389ms 200 application/javascript
+2019-03-07 11:40:09,553 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/lay/modules/form.js  
+2019-03-07 11:40:09,561 [7] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/lay/modules/form.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\lay\modules\form.js'
+2019-03-07 11:40:09,564 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.8408ms 200 application/javascript
+2019-03-07 11:40:09,584 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-03-07 11:40:09,588 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/lay/modules/layer.js  
+2019-03-07 11:40:09,607 [7] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\favicon.ico'
+2019-03-07 11:40:09,623 [12] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/lay/modules/layer.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\lay\modules\layer.js'
+2019-03-07 11:40:09,625 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.5254ms 200 image/x-icon
+2019-03-07 11:40:09,631 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.1663ms 200 application/javascript
+2019-03-07 11:40:09,633 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/css/modules/layer/default/layer.css?v=3.1.1  
+2019-03-07 11:40:09,640 [11] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/css/modules/layer/default/layer.css'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\css\modules\layer\default\layer.css'
+2019-03-07 11:40:09,642 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/font/iconfont.woff?v=226_rc2  
+2019-03-07 11:40:09,647 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.4948ms 200 text/css
+2019-03-07 11:40:09,672 [11] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/font/iconfont.woff'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\font\iconfont.woff'
+2019-03-07 11:40:09,696 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.7809ms 200 application/font-woff
+2019-03-07 11:40:24,582 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/css/modules/layer/default/loading-0.gif  
+2019-03-07 11:40:24,587 [7] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/css/modules/layer/default/loading-0.gif'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\css\modules\layer\default\loading-0.gif'
+2019-03-07 11:40:24,590 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.194ms 200 image/gif
+2019-03-07 11:40:24,592 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST https://localhost:5001/Login/Index application/x-www-form-urlencoded; charset=UTF-8 254
+2019-03-07 11:40:24,597 [11] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:24,602 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Login"}. Executing action YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)
+2019-03-07 11:40:24,625 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.UserLoginRequest) - Validation state: Valid
+2019-03-07 11:40:25,609 [11] INFO  Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Cookies signed in.
+2019-03-07 11:40:25,612 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.JsonResult in 984.3559ms.
+2019-03-07 11:40:25,617 [11] INFO  Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'YeZiFang.Application.Models.AjaxResult'.
+2019-03-07 11:40:25,623 [11] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin) in 1018.5812ms
+2019-03-07 11:40:25,626 [11] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.LoginController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:25,628 [11] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1036.0039ms 200 application/json; charset=utf-8
+2019-03-07 11:40:25,652 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Home  
+2019-03-07 11:40:25,664 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:25,666 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home"}. Executing action YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)
+2019-03-07 11:40:25,668 [10] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:25,672 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin) - Validation state: Valid
+2019-03-07 11:40:25,732 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 58.2493ms.
+2019-03-07 11:40:25,736 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+2019-03-07 11:40:25,765 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 29.816ms.
+2019-03-07 11:40:25,773 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin) in 99.9498ms
+2019-03-07 11:40:25,775 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.HomeController.Index (YeZiFang.Admin)'
+2019-03-07 11:40:25,781 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.8812ms 200 text/html; charset=utf-8
+2019-03-07 11:40:25,813 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/js/index.js  
+2019-03-07 11:40:25,818 [10] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/index.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\js\index.js'
+2019-03-07 11:40:25,819 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.2949ms 200 application/javascript
+2019-03-07 11:40:25,834 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Home/Welcome  
+2019-03-07 11:40:25,837 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin)'
+2019-03-07 11:40:25,841 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Welcome", controller = "Home"}. Executing action YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin)
+2019-03-07 11:40:25,855 [10] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:25,858 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/lib/layui/lay/modules/element.js  
+2019-03-07 11:40:25,860 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin) - Validation state: Valid
+2019-03-07 11:40:25,874 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2505ms.
+2019-03-07 11:40:25,876 [7] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/layui/lay/modules/element.js'. Physical path: 'E:\test-demo\yezi_fang\YeZiFang.Admin\wwwroot\lib\layui\lay\modules\element.js'
+2019-03-07 11:40:25,883 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.4149ms 200 application/javascript
+2019-03-07 11:40:25,888 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Welcome.
+2019-03-07 11:40:25,914 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Welcome executed in 23.3501ms.
+2019-03-07 11:40:25,916 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin) in 72.8039ms
+2019-03-07 11:40:25,919 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.HomeController.Welcome (YeZiFang.Admin)'
+2019-03-07 11:40:25,922 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.162ms 200 text/html; charset=utf-8
+2019-03-07 11:40:27,044 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList  
+2019-03-07 11:40:27,049 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:27,054 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:27,056 [7] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:27,059 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:27,112 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 50.929ms.
+2019-03-07 11:40:27,130 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:27,154 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 40.2545ms.
+2019-03-07 11:40:27,167 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 100.4789ms
+2019-03-07 11:40:27,170 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:27,173 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 127.8391ms 200 text/html; charset=utf-8
+2019-03-07 11:40:35,468 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:35,472 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:35,476 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:35,480 [7] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:35,483 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:35,501 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.2605ms.
+2019-03-07 11:40:35,505 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:35,518 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 4.102ms.
+2019-03-07 11:40:35,542 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 40.9261ms
+2019-03-07 11:40:35,548 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:35,552 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.9926ms 200 text/html; charset=utf-8
+2019-03-07 11:40:37,357 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:37,360 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:37,361 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:37,365 [7] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:37,368 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:37,392 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 22.0487ms.
+2019-03-07 11:40:37,393 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:37,404 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 2.1007ms.
+2019-03-07 11:40:37,409 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 42.5495ms
+2019-03-07 11:40:37,414 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:37,418 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.5553ms 200 text/html; charset=utf-8
+2019-03-07 11:40:37,817 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:37,823 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:37,825 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:37,827 [12] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:37,829 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:37,848 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.9284ms.
+2019-03-07 11:40:37,851 [12] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:37,855 [12] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 3.6596ms.
+2019-03-07 11:40:37,864 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 30.1214ms
+2019-03-07 11:40:37,867 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:37,871 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 51.4971ms 200 text/html; charset=utf-8
+2019-03-07 11:40:38,018 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:38,021 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,023 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:38,026 [7] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:38,028 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:38,049 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 18.1647ms.
+2019-03-07 11:40:38,051 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:38,055 [7] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 2.7103ms.
+2019-03-07 11:40:38,057 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 31.6426ms
+2019-03-07 11:40:38,068 [7] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,072 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 52.4557ms 200 text/html; charset=utf-8
+2019-03-07 11:40:38,165 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:38,168 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,171 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:38,174 [12] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:38,175 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:38,194 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.3695ms.
+2019-03-07 11:40:38,196 [12] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:38,200 [12] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 2.1412ms.
+2019-03-07 11:40:38,216 [12] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 28.0212ms
+2019-03-07 11:40:38,218 [12] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,221 [12] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 55.7294ms 200 text/html; charset=utf-8
+2019-03-07 11:40:38,314 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList?ProjectName=  
+2019-03-07 11:40:38,316 [6] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,319 [6] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:40:38,322 [6] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:40:38,325 [6] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:40:38,345 [6] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.5385ms.
+2019-03-07 11:40:38,348 [6] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:40:38,356 [6] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 3.6933ms.
+2019-03-07 11:40:38,372 [6] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 36.6326ms
+2019-03-07 11:40:38,375 [6] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:40:38,392 [6] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 63.0012ms 200 text/html; charset=utf-8
+2019-03-07 11:41:06,024 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET https://localhost:5001/Project/ProjectList  
+2019-03-07 11:41:06,027 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:41:06,029 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "ProjectList", controller = "Project"}. Executing action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)
+2019-03-07 11:41:06,032 [10] INFO  Microsoft.AspNetCore.Authorization.DefaultAuthorizationService - Authorization was successful.
+2019-03-07 11:41:06,036 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executing action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) with arguments (YeZiFang.DataContract.Request.GetProjectListRequest) - Validation state: Valid
+2019-03-07 11:41:38,606 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action method YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin), returned result Microsoft.AspNetCore.Mvc.ViewResult in 32567.8181ms.
+2019-03-07 11:41:38,609 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view ProjectList.
+2019-03-07 11:41:38,617 [10] INFO  Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view ProjectList executed in 4.6535ms.
+2019-03-07 11:41:38,625 [10] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker - Executed action YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin) in 32587.5812ms
+2019-03-07 11:41:38,641 [10] INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'YeZiFang.Admin.Controllers.ProjectController.ProjectList (YeZiFang.Admin)'
+2019-03-07 11:41:38,648 [10] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32619.2669ms 200 text/html; charset=utf-8

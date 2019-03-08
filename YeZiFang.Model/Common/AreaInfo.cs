@@ -13,7 +13,7 @@ namespace YeZiFang.Model
     [Table("T_Area")]
     public class AreaInfo
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         /// <summary>
         /// 地区名称
         /// </summary>

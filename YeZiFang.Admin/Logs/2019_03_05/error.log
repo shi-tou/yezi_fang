@@ -1,0 +1,12 @@
+﻿2019-03-05 14:51:09,317 [17] ERROR YeZiFang.Service.SystemService [(null)] - BaseService.Update->ProjectInfo:{"ID":"20190305142739794175","ProjectName":"天将花苑","ProjectOtherName":null,"Feature":null,"Purpose":0,"AvgPrice":4600.00,"Fitment":0,"Developer":null,"ProvinceId":0,"CityId":0,"AreaId":1930,"Address":"桂平市浔州路北段（32米主干道）蝴蝶垌 ","Longitude":110.075741,"Latitude":23.386902,"UsefulLife":0,"TotalHouseCount":0,"LandArea":0.0,"BuildingArea":0.0,"GreenRate":0.0,"PlotRate":0.0,"CreateBy":null,"CreateTime":"0001-01-01T00:00:00","UpdateBy":null,"UpdateTime":"0001-01-01T00:00:00"}
+MySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect datetime value: '0001-01-01 00:00:00' for column 'CreateTime' at row 1
+   at Shitou.Framework.ORM.AdoTemplate.Update[T](T t)
+   at YeZiFang.Service.BaseService.Update[T](T t) in E:\test-demo\yezi_fang\YeZiFang.Service\Base\BaseService.cs:line 76
+2019-03-05 15:12:51,994 [9] ERROR YeZiFang.Service.SystemService [(null)] - BaseService.GetList->AreaInfo:ProvinceId=20
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'ProvinceId' in 'where clause'
+   at Shitou.Framework.ORM.AdoTemplate.GetList[T](Hashtable hsWhere)
+   at YeZiFang.Service.BaseService.GetList[T](String columnName, Object value) in E:\test-demo\yezi_fang\YeZiFang.Service\Base\BaseService.cs:line 220
+2019-03-05 15:33:58,429 [7] ERROR YeZiFang.Service.SystemService [(null)] - BaseService.Update->ProjectInfo:{"ID":"20190305142739104113","ProjectName":"京基御景中央","ProjectOtherName":null,"Feature":"刚需专场,学校附近","Purpose":1,"AvgPrice":50000.00,"Fitment":1,"Developer":null,"ProvinceId":19,"CityId":199,"AreaId":1773,"Address":"深圳市龙岗区大运新城飞扬路与如意路交汇处 ","Longitude":114.214617,"Latitude":22.711858,"UsefulLife":0,"TotalHouseCount":1700,"LandArea":97.00,"BuildingArea":200139.00,"GreenRate":0.0,"PlotRate":0.0,"CreateBy":null,"CreateTime":"0001-01-01T00:00:00","UpdateBy":null,"UpdateTime":"0001-01-01T00:00:00"}
+MySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect datetime value: '0001-01-01 00:00:00' for column 'CreateTime' at row 1
+   at Shitou.Framework.ORM.AdoTemplate.Update[T](T t)
+   at YeZiFang.Service.BaseService.Update[T](T t) in E:\test-demo\yezi_fang\YeZiFang.Service\Base\BaseService.cs:line 76
